@@ -1,7 +1,9 @@
 import numpy as np
-
+import json
 
 def task(str1, str2):
+    str1 = json.loads(str1)
+    str2= json.loads(str2)
     def convert_to_int(str_line,int_line):
         for i in range(len(str_line)):
             if len(str_line[i]) != 1 and type(str_line[i]) != str:
