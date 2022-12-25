@@ -2,7 +2,8 @@ import numpy as np
 import json
 
 def task(str1):
-    array=np.transpose(str1)
+    array = json.loads(str1)
+    array=np.transpose(array)
     A = np.zeros((3,3))
     B= np.zeros((3,3))
     C = np.zeros((3,3))
